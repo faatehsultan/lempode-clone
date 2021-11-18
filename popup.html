@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="row h-100">
+      <div
+        class="
+          col-2
+          p-0
+          d-flex
+          flex-column
+          justify-content-evenly
+          align-items-center
+        "
+      >
+        <div
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="homeBtn"
+        >
+          <i class="bi bi-house-fill fs-1"></i>
+        </div>
+        <div
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="linkedinBtn"
+        >
+          <i class="bi bi-linkedin fs-1"></i>
+        </div>
+        <div
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="podsBtn"
+        >
+          <i class="bi bi-people-fill fs-1"></i>
+        </div>
+        <div
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="notificationsBtn"
+        >
+          <i class="bi bi-bell-fill fs-1"></i>
+        </div>
+        <a
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="billingBtn"
+        >
+          <i class="bi bi-credit-card-fill fs-1"></i>
+        </a>
+        <div
+          class="ps-1 py-3 d-flex justify-content-center w-100 sideBtnHover"
+          id="fullscreenBtn"
+        >
+          <i class="bi bi-arrows-fullscreen fs-1"></i>
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="view" id="view_dashboard">
+          <div class="fs-2">Dashboard</div>
+        </div>
+        <div class="view" id="view_linkedin">
+          <div class="fs-2">My Posts</div>
+          <br />
+          <br />
+          <form>
+            <!-- handle form submission as per backend logic -->
+            <div class="form-group">
+              <label for="view_linkedin_post_link">Post Link</label>
+              <input class="form-control" id="view_linkedin_post_link" />
+              <br />
+              <input type="submit" value="SUBMIT" class="btn btn-primary" />
+            </div>
+          </form>
+        </div>
+        <div class="view" id="view_pods">
+          <div class="fs-2">Pods</div>
+          <br />
+          <br />
+          <form>
+            <!-- handle form submission as per backend logic -->
+            <div class="form-group">
+              <label for="view_pods_pod_code">Pod Code</label>
+              <input class="form-control" id="view_pods_pod_code" />
+              <br />
+              <input type="submit" value="SUBMIT" class="btn btn-primary" />
+            </div>
+            <br />
+            <div class="text-center fs-4">OR</div>
+            <br />
+            <button class="btn btn-info">CREATE NEW POD</button>
+          </form>
+        </div>
+        <div class="view" id="view_notifications">
+          <div class="fs-2">Notifications</div>
+          <br>
+          <br>
+          <p class="grayText"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
